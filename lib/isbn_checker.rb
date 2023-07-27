@@ -22,7 +22,7 @@ class IsbnChecker
 
     check_mod = checksum % 10
 
-    check_mod.zero? ? 0 : 10 - check_mod
+    check_mod.zero? ? 0 : (10 - check_mod)
   end
   ######################################################
 
