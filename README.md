@@ -45,7 +45,8 @@ Coverage report generated for RSpec to ./coverage. 49 / 49 LOC (100.0%) covered.
 
 After running the tests you can check the coverage report in `coverage/index.html`.
 
-There's also a GitHub Action configured to show the code coverage of a Pull Request.
+There's also a GitHub Action configured to show the code coverage report as a
+comment of the Pull Requests. [Here's an example.](https://github.com/meleu/isbn13/pull/1#issuecomment-1654254433)
 
 ## CLI
 
