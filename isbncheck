@@ -1,0 +1,18 @@
+#!/usr/bin/env ruby
+# ISBN13 Checker
+# Usage: ./isbncheck <ISBN-13 code>
+
+require_relative 'lib/isbn_checker'
+
+begin
+  isbn = ARGV[0]
+
+  if IsbnChecker.new(isbn).valid?
+    puts "✅ '#{isbn}' is a valid ISBN-13 code"
+  else
+    puts "❌ '#{isbn}' is an invalid ISBN-13 code"
+  end
+rescue InvalidIsbnError => e
+  warn "❌ [ERROR]: #{e.message}: #{isbn}"
+  exit 2
+end
