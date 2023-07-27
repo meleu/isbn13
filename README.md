@@ -4,7 +4,7 @@ Calculate the check digit of ISBN-13 barcodes.
 
 ## Check Digit Calculation
 
-The logic responsible to calculate the ISBN-13 check digit is in the `#check_digit` method, in the [lib/isbn_checker.rb](lib/isbn_checker.rb) file.
+The logic responsible to calculate the ISBN-13 check digit is in the `#check_digit` method, in the [lib/isbn_checker.rb](lib/isbn_checker.rb#L12-L27) file.
 
 ## Installation
 
@@ -44,6 +44,9 @@ Coverage report generated for RSpec to ./coverage. 49 / 49 LOC (100.0%) covered.
 ### Code Coverage Report
 
 After running the tests you can check the coverage report in `coverage/index.html`.
+
+There's also a GitHub Action configured to show the code coverage report as a
+comment of the Pull Requests. [Here's an example.](https://github.com/meleu/isbn13/pull/1#issuecomment-1654254433)
 
 ## CLI
 
