@@ -50,7 +50,7 @@ describe '#valid' do
   end
 
   it 'reject invalid ISBNs' do
-    invalid_codes = %w[978-0141439519 978-1250788451 978-0142437248]
+    invalid_codes = %w[978141439519 978-1250788451 978-0142437248]
 
     invalid_codes.each do |code|
       isbn = IsbnChecker.new(code)
